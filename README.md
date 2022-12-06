@@ -1,4 +1,4 @@
-# LightMoves
+# RockIt
 An AR game that lets you practice body movements through fun minigames.
 
-Handtracking Unity: https://drive.google.com/file/d/13LLLxpIeCJmGiNiEBT0TP6oXfQThRHmJ/view?usp=sharing
+Presentation: https://www.canva.com/design/DAFT4Zl5vj8/xG2F-ABqYObmCXHF0-U8PQ/edit?utm_content=DAFT4Zl5vj8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
