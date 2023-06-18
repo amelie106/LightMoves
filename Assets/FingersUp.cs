@@ -8,7 +8,6 @@ using System.Linq;
 public class FingersUp : MonoBehaviour
 {
     public UDPReceive udpReceive;
-    //public Text fingersUp;
     public int[] fingers;
     public int total;
 
@@ -21,15 +20,19 @@ public class FingersUp : MonoBehaviour
     void Update()
     {
         string data = udpReceive.data;
-        if(data.Length>0) {
+        
+        try {
+            // Convert string to integers
             data = data.Remove(0, 1);
             data = data.Remove(data.Length-1, 1);
             fingers = Array.ConvertAll(data.Split(","), s => int.Parse(s));
+
+            // Count the number of fingers raised
             total = fingers.Sum();
-            
         }
-        
-        //fingersUp.text = total.ToString();
+        catch (Exception) {
+            total = 0;
+        }
 
 
     }

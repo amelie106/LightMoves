@@ -104,13 +104,14 @@ class handDetector():
 
         return length, img, [x1, y1, x2, y2, cx, cy]
 
-def main():
+
+if __name__ == "__main__":
     pTime = 0
     cTime = 0
     cap = cv2.VideoCapture(0)
     detector = handDetector()
 
-    sock = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     serverAddressPort = ("127.0.0.1", 5052)
     while True:
         success, img = cap.read()
@@ -125,10 +126,7 @@ def main():
         sock.sendto(str.encode(str(fingers)), serverAddressPort)
 
         cv2.putText(img, str(fingers), (10, 70), cv2.FONT_HERSHEY_PLAIN, 3,
-        (255, 0, 255), 3)
+                    (255, 0, 255), 3)
 
         cv2.imshow("Image", img)
         cv2.waitKey(1)
-    
-# if _name_ == "_main_":
-main()
