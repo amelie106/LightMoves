@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 463174611}
   - component: {fileID: 463174610}
   - component: {fileID: 463174609}
-  - component: {fileID: 463174608}
+  - component: {fileID: 463174612}
   m_Layer: 5
   m_Name: Back_Button
   m_TagString: Untagged
@@ -299,18 +299,6 @@ RectTransform:
   m_AnchoredPosition: {x: -10.1, y: -133.4}
   m_SizeDelta: {x: 73.5552, y: 28.983}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &463174608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 463174606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a72c035ea4e89b54488ce6cb2dca2aa2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &463174609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,9 +343,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 463174608}
-        m_TargetAssemblyTypeName: Back_Main_Menu, Assembly-CSharp
-        m_MethodName: backtoMenu
+      - m_Target: {fileID: 463174612}
+        m_TargetAssemblyTypeName: Back_Level_Menu, Assembly-CSharp
+        m_MethodName: BacktoLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -405,6 +393,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463174606}
   m_CullTransparentMesh: 1
+--- !u!114 &463174612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463174606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df945ed81407004c83e258486f05a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &985548960
 GameObject:
   m_ObjectHideFlags: 0
